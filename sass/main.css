@@ -1,11 +1,3 @@
-/*
-COLORS:
-
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
-
-*/
 *,
 *::after,
 *::before {
@@ -53,10 +45,6 @@ body {
 }
 
 .header__logo {
-  height: 3.5rem;
-}
-
-.logo:hover {
   height: 3.5rem;
 }
 
