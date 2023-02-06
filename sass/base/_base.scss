@@ -7,16 +7,10 @@
 }
 
 html {
+    // this defines what we want 1 rem equal to
     font-size: 62.5%;
 }
 
 body {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 1.7;
-    color: $color-grey-dark;
-    padding: 3rem;
-
     box-sizing: border-box;
 }
