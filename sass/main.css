@@ -29,13 +29,11 @@ body {
           clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
 }
-
 .header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
-
 .header__text-box {
   position: absolute;
   top: 40%;
@@ -43,7 +41,6 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
 .header__logo {
   height: 3.5rem;
 }
