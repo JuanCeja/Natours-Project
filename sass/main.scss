@@ -61,24 +61,24 @@ body {
     color: $color-white;
     text-transform: uppercase;
     margin-bottom: 6rem;
-}
 
-.heading-primary--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 700;
-    letter-spacing: 3.5rem;
+    &--main {
+        display: block;
+        font-size: 6rem;
+        font-weight: 700;
+        letter-spacing: 3.5rem;
 
-    animation: moveInLeft 1.5s ease-out;
-}
+        animation: moveInLeft 1.5s ease-out;
+    }
 
-.heading-primary--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 400;
-    letter-spacing: 1.75rem;
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: 1.75rem;
 
-    animation: moveInRight 1.5s ease-out;
+        animation: moveInRight 1.5s ease-out;
+    }
 }
 
 @keyframes moveInLeft {
@@ -125,55 +125,57 @@ body {
     }
 }
 
-.btn:link,
-.btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1.5rem 4rem;
-    border-radius: 10rem;
-    display: inline-block;
-    transition: all 0.2s;
-    position: relative;
-}
+.btn {
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        border-radius: 10rem;
+        display: inline-block;
+        transition: all 0.2s;
+        position: relative;
+    }
 
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0px 1rem 2rem rgba($color-black, 0.2);
-}
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0px 1rem 2rem rgba($color-black, 0.2);
+    }
 
-.btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0px 0.5rem 1rem rgba($color-black, 0.2);
-}
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0px 0.5rem 1rem rgba($color-black, 0.2);
+    }
 
-.btn--white {
-    background-color: $color-white;
-    color: $color-grey-dark;
-}
+    &--white {
+        background-color: $color-white;
+        color: $color-grey-dark;
+    }
 
-.btn::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 10rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all 0.4s;
-}
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.4s;
+    }
 
-.btn--white::after {
-    background-color: $color-white;
-}
+    &--white::after {
+        background-color: $color-white;
+    }
 
-.btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
-}
+    &:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+    }
 
-.btn--animated {
-    animation: moveInBottom 0.5s ease-out 0.75s;
-    animation-fill-mode: backwards;
+    &--animated {
+        animation: moveInBottom 0.5s ease-out 0.75s;
+        animation-fill-mode: backwards;
+    }
 }
