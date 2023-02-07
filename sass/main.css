@@ -127,6 +127,17 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.4s;
+}
+.heading-secondary:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.u-center-text {
+  display: flex;
+  justify-content: center;
 }
 
 .btn:link, .btn:visited {
