@@ -135,9 +135,33 @@ body {
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+}
+.paragraph:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
 .u-center-text {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
 }
 
 .btn:link, .btn:visited {
@@ -185,6 +209,16 @@ body {
           animation: moveInBottom 0.5s ease-out 0.75s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
+}
+
+.review-section {
+  display: flex;
+}
+.review-section__reviews {
+  flex: 1;
+}
+.review-section__images {
+  flex: 1;
 }
 
 .header {

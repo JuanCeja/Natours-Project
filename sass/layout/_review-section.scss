@@ -1,0 +1,11 @@
+.review-section {
+    display: flex;
+
+    &__reviews {
+        flex: 1;
+    }
+
+    &__images {
+        flex: 1;
+    }
+}
