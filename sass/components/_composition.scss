@@ -1,15 +1,18 @@
 .composition {
-    
 
-    &__photo--p1 {
-        
-    }
 
-    &__photo--p2 {
+    &__photo {
 
-    }
+        &--p1 {
+            
+        }
 
-    &__photo--p3 {
+        &--p2 {
 
+        }
+
+        &--p3 {
+
+        }
     }
 }
