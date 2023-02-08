@@ -231,13 +231,13 @@ body {
   transform: translateY(0);
 }
 
-.review-section {
+.about-section {
   display: flex;
 }
-.review-section__reviews {
+.about-section__reviews {
   flex: 1;
 }
-.review-section__images {
+.about-section__images {
   flex: 1;
 }
 
