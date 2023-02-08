@@ -4,8 +4,9 @@
     &__photo {
         width: 55%;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
-        border-radius: 2px;
         position: absolute;
+        z-index: 10;
+        outline-offset: 2rem;
 
         &--p1 {
             left: 0;
@@ -20,6 +21,13 @@
         &--p3 {
             left: 20%;
             top: 10rem;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            outline: 1.5rem solid $color-primary;
+            z-index: 20;
         }
     }
 }
