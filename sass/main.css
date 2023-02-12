@@ -14,20 +14,6 @@ body {
   box-sizing: border-box;
 }
 
-@-webkit-keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem);
-  }
-  80% {
-    transform: translateX(1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -35,19 +21,6 @@ body {
   }
   80% {
     transform: translateX(1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-@-webkit-keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem);
-  }
-  80% {
-    transform: translateX(-1rem);
   }
   100% {
     opacity: 1;
@@ -65,16 +38,6 @@ body {
   100% {
     opacity: 1;
     transform: translate(0);
-  }
-}
-@-webkit-keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(5rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 @keyframes moveInBottom {
@@ -106,16 +69,14 @@ body {
   font-size: 6rem;
   font-weight: 700;
   letter-spacing: 3.5rem;
-  -webkit-animation: moveInLeft 1.5s ease-out;
-          animation: moveInLeft 1.5s ease-out;
+  animation: moveInLeft 1.5s ease-out;
 }
 .heading-primary--sub {
   display: block;
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: 1.75rem;
-  -webkit-animation: moveInRight 1.5s ease-out;
-          animation: moveInRight 1.5s ease-out;
+  animation: moveInRight 1.5s ease-out;
 }
 
 .heading-secondary {
@@ -207,10 +168,8 @@ body {
   transition: all 0.4s;
 }
 .btn--animated {
-  -webkit-animation: moveInBottom 0.5s ease-out 0.75s;
-          animation: moveInBottom 0.5s ease-out 0.75s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
 }
 
 .btn-text:link, .btn-text:visited {
