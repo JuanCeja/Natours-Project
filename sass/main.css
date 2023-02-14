@@ -302,4 +302,15 @@ body {
   align-items: center;
   transform: skewY(7deg);
   margin-top: 20rem;
+}
+
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+}
+.section-tours__container {
+  margin-top: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }/*# sourceMappingURL=main.css.map */
