@@ -83,13 +83,13 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
+  letter-spacing: 0.2rem;
+  transition: all 0.4s;
   display: inline-block;
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  letter-spacing: 0.2rem;
-  transition: all 0.4s;
 }
 .heading-secondary:hover {
   transform: skewY(2deg) skewX(15deg) scale(1.1);
@@ -230,6 +230,16 @@ body {
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  flex: 1;
+}
+.feature-box__icon {
+  font-size: 6rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .about-section {
   display: flex;
@@ -277,4 +287,7 @@ body {
   padding: 20rem 0;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../../img/nat-4.jpg);
   background-size: cover;
+}
+.section-features__container {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */

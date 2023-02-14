@@ -9,4 +9,8 @@
     background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgb($color-primary-dark, 0.8)),
     url(../../img/nat-4.jpg);
     background-size: cover;
+
+    &__container {
+        display: flex;
+    }
 }
