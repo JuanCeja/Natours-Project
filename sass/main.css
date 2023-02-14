@@ -230,8 +230,8 @@ body {
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  flex: 1;
-  transition: transition 0.3s;
+  transition: transform 0.3s;
+  width: 20%;
 }
 .feature-box__icon {
   font-size: 6rem;
@@ -295,4 +295,6 @@ body {
 }
 .section-features__container {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
