@@ -246,6 +246,16 @@ body {
   transform: translateY(-1.5rem) scaleY(1.03);
 }
 
+.card {
+  background-color: orangered;
+  height: 50rem;
+  width: 25%;
+  transition: all 0.8s;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+
 .about-section {
   display: flex;
   padding: 5rem;
