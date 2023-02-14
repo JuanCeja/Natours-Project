@@ -306,7 +306,8 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 25rem 0;
+  padding: 25rem 0 50rem 0;
+  margin-top: -15rem;
 }
 .section-tours__container {
   margin-top: 8rem;
