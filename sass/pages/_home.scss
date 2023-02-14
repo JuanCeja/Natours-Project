@@ -12,11 +12,13 @@
 
     transform: skewY(-7deg);
     margin-top: -15rem;
+    height: 100rem;
     
     &__container {
         display: flex;
         justify-content: space-around;
         align-items: center;
         transform: skewY(7deg);
+        margin-top: 20rem;
     }
 }

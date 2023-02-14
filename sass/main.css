@@ -294,10 +294,12 @@ body {
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -15rem;
+  height: 100rem;
 }
 .section-features__container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   transform: skewY(7deg);
+  margin-top: 20rem;
 }/*# sourceMappingURL=main.css.map */
