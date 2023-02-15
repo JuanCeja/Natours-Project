@@ -68,10 +68,32 @@
     }
 
     &__heading {
-    
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
     }
 
     &__details {
 
+    }
+
+    &__heading-span {
+
+        &--1 {
+            
+        }
+
+        &--2 {
+
+        }
+
+        &--3 {
+
+        }
     }
 }
