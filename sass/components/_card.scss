@@ -6,7 +6,6 @@
     
 
     &__side {
-        background-color: blue;
         color: white;
         font-size: 2rem;
 
@@ -19,11 +18,11 @@
         backface-visibility: hidden;
         
         &--front {
-            background-color: blue;
+            background-color: $color-white;
         }
         
         &--back {
-            background-color: orange;
+            background-image: linear-gradient(to bottom left, );
             transform: rotateY(180deg);
         }
     }
