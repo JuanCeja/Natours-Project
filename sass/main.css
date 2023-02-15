@@ -247,7 +247,7 @@ body {
 }
 
 .card {
-  perspective: 150rem;
+  perspective: 125rem;
   position: relative;
   height: 50rem;
   width: 25%;

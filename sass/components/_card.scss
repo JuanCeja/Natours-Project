@@ -1,8 +1,9 @@
 .card {
-    perspective: 150rem;
+    perspective: 125rem;
     position: relative;
     height: 50rem;
     width: 25%;
+    // flex: 1;
 
     &__side {
         color: black;
