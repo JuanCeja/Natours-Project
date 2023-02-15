@@ -248,14 +248,35 @@ body {
 
 .card {
   perspective: 150rem;
+  position: relative;
+  height: 50rem;
+  width: 25%;
 }
 .card__side {
-  background-color: orangered;
+  background-color: blue;
+  color: white;
+  font-size: 2rem;
   height: 50rem;
-  transition: all 0.8s;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
-.card:hover .card__side {
+.card__side--front {
+  background-color: blue;
+}
+.card__side--back {
+  background-color: orange;
   transform: rotateY(180deg);
+}
+.card:hover .card__side--front {
+  transform: rotateY(180deg);
+}
+.card:hover .card__side--back {
+  transform: rotateY(0deg);
 }
 
 .about-section {
