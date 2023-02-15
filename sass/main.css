@@ -263,6 +263,7 @@ body {
           backface-visibility: hidden;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  overflow: hidden;
 }
 .card__side--front {
   background-color: #fff;
@@ -287,6 +288,8 @@ body {
 }
 .card__picture {
   background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 .card__picture--1 {
   background-image: linear-gradient(to bottom right, #ffb900, #ff7730), url(../img/nat-5.jpg);
