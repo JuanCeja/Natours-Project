@@ -253,7 +253,7 @@ body {
   width: 25%;
 }
 .card__side {
-  color: white;
+  color: black;
   font-size: 2rem;
   height: 50rem;
   transition: all 0.8s ease;
@@ -263,13 +263,23 @@ body {
   width: 100%;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 .card__side--front {
   background-color: #fff;
 }
 .card__side--back {
-  background-image: linear-gradient(to bottom left);
   transform: rotateY(180deg);
+}
+.card__side--back-1 {
+  background-image: linear-gradient(to bottom right, #ffb900, #ff7730);
+}
+.card__side--back-2 {
+  background-image: linear-gradient(to bottom right, #ffb900, #ff7730);
+}
+.card__side--back-3 {
+  background-image: linear-gradient(to bottom right, #ffb900, #ff7730);
 }
 .card:hover .card__side--front {
   transform: rotateY(180deg);
