@@ -285,6 +285,20 @@ body {
 .card:hover .card__side--back {
   transform: rotateY(0deg);
 }
+.card__picture {
+  background-size: cover;
+}
+.card__picture--1 {
+  background-image: linear-gradient(to bottom right, #ffb900, #ff7730), url(../img/nat-5.jpg);
+  height: 23rem;
+  background-blend-mode: screen;
+}
+.card__picture--2 {
+  background-image: url(../img/nat-5.jpg);
+}
+.card__picture--3 {
+  background-image: url(../img/nat-5.jpg);
+}
 .about-section {
   display: flex;
   padding: 5rem;

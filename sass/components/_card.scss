@@ -48,17 +48,20 @@
 
     //FRONT SIDE STYLING
     &__picture {
+        background-size: cover;
 
         &--1 {
-
+            background-image: linear-gradient(to bottom right, $color-secondary-light, $color-secondary-dark), url(../img/nat-5.jpg);
+            height: 23rem;
+            background-blend-mode: screen;
         }
-
+        
         &--2 {
-
+            background-image: url(../img/nat-5.jpg);
         }
-
+        
         &--3 {
-
+            background-image: url(../img/nat-5.jpg);
         }
     }
 
