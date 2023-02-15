@@ -1,5 +1,4 @@
 .card {
-    
     //FUNCTIONALITY
     perspective: 125rem;
     position: relative;
@@ -7,7 +6,7 @@
     width: 25%;
 
     &__side {
-        height: 50rem;
+        height: 60rem;
         transition: all 0.8s ease;
         position: absolute;
         top: 0;
@@ -80,10 +79,6 @@
         width: 75%;
     }
 
-    &__details {
-
-    }
-
     &__heading-span {
         padding: 1rem 1.5rem;
         box-decoration-break: clone;
@@ -100,6 +95,26 @@
         }
 
         &--3 {
+        }
+    }
+
+    &__details {
+        padding: 3rem;
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+                
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-light-2;
+                }
+            }
         }
     }
 }
