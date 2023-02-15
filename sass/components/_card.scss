@@ -3,12 +3,8 @@
     position: relative;
     height: 50rem;
     width: 25%;
-    // flex: 1;
 
     &__side {
-        color: black;
-        font-size: 2rem;
-
         height: 50rem;
         transition: all 0.8s ease;
         position: absolute;
@@ -41,7 +37,7 @@
     }
 
     &:hover &__side--front {
-        transform: rotateY(180deg);
+        transform: rotateY(-180deg);
     }
 
     &:hover &__side--back {

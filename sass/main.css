@@ -253,8 +253,6 @@ body {
   width: 25%;
 }
 .card__side {
-  color: black;
-  font-size: 2rem;
   height: 50rem;
   transition: all 0.8s ease;
   position: absolute;
@@ -282,7 +280,7 @@ body {
   background-image: linear-gradient(to bottom right, #ffb900, #ff7730);
 }
 .card:hover .card__side--front {
-  transform: rotateY(180deg);
+  transform: rotateY(-180deg);
 }
 .card:hover .card__side--back {
   transform: rotateY(0deg);
