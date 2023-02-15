@@ -1,4 +1,6 @@
 .card {
+
+    //FUNCTIONALITY
     perspective: 125rem;
     position: relative;
     height: 50rem;
@@ -42,5 +44,29 @@
 
     &:hover &__side--back {
         transform: rotateY(0deg);
+    }
+
+    //FRONT SIDE STYLING
+    &__picture {
+
+        &--1 {
+
+        }
+
+        &--2 {
+
+        }
+
+        &--3 {
+
+        }
+    }
+
+    &__heading {
+
+    }
+
+    &__details {
+
     }
 }

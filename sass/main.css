@@ -285,7 +285,6 @@ body {
 .card:hover .card__side--back {
   transform: rotateY(0deg);
 }
-
 .about-section {
   display: flex;
   padding: 5rem;
