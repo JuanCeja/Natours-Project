@@ -7,6 +7,11 @@
     padding: 6rem;
     padding-left: 9rem;
     font-size: $default-font-size;
+    transform: skewX(-12deg);
+    
+    & > * {
+        transform: skewX(12deg);
+    }
 
     &__shape {
         width: 15rem;
@@ -15,10 +20,14 @@
         shape-outside: circle(50% at 50% 50%);
 
         clip-path: circle(50% at 50% 50%);
-        transform: translateX(-3rem);
+        transform: translateX(-3rem) skewX(12deg);
     }
 
     &__image {
         height: 100%;
+    }
+
+    &__text {
+
     }
 }
