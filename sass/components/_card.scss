@@ -50,26 +50,22 @@
     &__picture {
         background-size: cover;
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        height: 23rem;
+        background-blend-mode: screen;
 
         &--1 {
             background-image: linear-gradient(to bottom right, $color-secondary-light, $color-secondary-dark),
                 url(../img/nat-5.jpg);
-            height: 23rem;
-            background-blend-mode: screen;
         }
 
         &--2 {
             background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark),
                 url(../img/nat-6.jpg);
-            height: 23rem;
-            background-blend-mode: screen;
         }
 
         &--3 {
             background-image: linear-gradient(to bottom right, $color-tertiary-light, $color-tertiary-dark),
                 url(../img/nat-7.jpg);
-            height: 23rem;
-            background-blend-mode: screen;
         }
     }
 
@@ -151,7 +147,8 @@
     }
 
     &__price-only {
-        
+        font-size: 1.4rem;
+        text-transform: uppercase;
     }
 
     &__price-value {

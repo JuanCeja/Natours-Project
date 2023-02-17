@@ -290,21 +290,17 @@ body {
   background-size: cover;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  height: 23rem;
+  background-blend-mode: screen;
 }
 .card__picture--1 {
   background-image: linear-gradient(to bottom right, #ffb900, #ff7730), url(../img/nat-5.jpg);
-  height: 23rem;
-  background-blend-mode: screen;
 }
 .card__picture--2 {
   background-image: linear-gradient(to bottom right, #7ed56f, #28b485), url(../img/nat-6.jpg);
-  height: 23rem;
-  background-blend-mode: screen;
 }
 .card__picture--3 {
   background-image: linear-gradient(to bottom right, #2998ff, #5643fa), url(../img/nat-7.jpg);
-  height: 23rem;
-  background-blend-mode: screen;
 }
 .card__heading {
   font-size: 2.8rem;
@@ -359,6 +355,10 @@ body {
   text-align: center;
   color: #fff;
   margin-bottom: 8rem;
+}
+.card__price-only {
+  font-size: 1.4rem;
+  text-transform: uppercase;
 }
 .card__price-value {
   font-size: 6rem;
