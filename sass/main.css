@@ -404,6 +404,8 @@ body {
 }
 .story__image {
   height: 100%;
+  transform: translateX(-4rem) scale(1.4);
+  transition: all 0.5s;
 }
 .story__caption {
   position: absolute;
@@ -420,6 +422,10 @@ body {
 .story:hover .story__caption {
   opacity: 1;
   transform: translate(-50%, -50%);
+}
+.story:hover .story__image {
+  transform: translateX(-4rem) scale(1);
+  filter: blur(3px) brightness(80%);
 }
 
 .about-section {
