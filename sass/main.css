@@ -206,6 +206,18 @@ body {
   transform: translateY(0);
 }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 20%;
+  z-index: -1;
+}
+
 .composition {
   position: relative;
 }
@@ -386,7 +398,7 @@ body {
   width: 75%;
   margin: 0 auto;
   box-shadow: 0rem 3rem 6rem rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.55);
   border-radius: 3px;
   padding: 6rem;
   padding-left: 9rem;
@@ -505,5 +517,6 @@ body {
 
 .section-stories {
   padding: 7rem 0;
-  background-color: #f7f7f7;
+  position: relative;
+  overflow: hidden;
 }/*# sourceMappingURL=main.css.map */
