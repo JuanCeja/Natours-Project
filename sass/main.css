@@ -130,6 +130,10 @@ body {
   margin-top: 18rem;
 }
 
+.u-margin-top-med {
+  margin-top: 8rem;
+}
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -388,6 +392,7 @@ body {
   padding-left: 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg);
+  margin-bottom: 7rem;
 }
 .story > * {
   transform: skewX(12deg);
@@ -499,7 +504,7 @@ body {
 }
 
 .section-stories {
-  padding: 15rem 0;
+  padding: 7rem 0;
   background-color: #f7f7f7;
-  border: 1px solid red;
+  border-top: 3px solid #fff;
 }/*# sourceMappingURL=main.css.map */
