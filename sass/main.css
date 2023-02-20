@@ -428,6 +428,14 @@ body {
 .form__input::placeholder {
   color: #999;
 }
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+}
+
 .story {
   width: 75%;
   margin: 0 auto;
