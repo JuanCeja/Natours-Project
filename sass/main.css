@@ -405,13 +405,25 @@ body {
 .form__input {
   font-size: 1.5rem;
   font-family: inherit;
+  color: inherit;
   padding: 1.5rem 2rem;
   border-radius: 2px;
   background-color: rgba(255, 255, 255, 0.5);
   border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block;
 }
 .form__input:focus {
   outline: none;
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #55c57a;
+}
+.form__input::-moz-placeholder {
+  color: #999;
+}
+.form__input::placeholder {
+  color: #999;
 }
 .story {
   width: 75%;
