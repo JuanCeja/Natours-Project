@@ -454,13 +454,38 @@ body {
 .form__radio-label {
   font-size: 1.6rem;
   cursor: pointer;
+  position: relative;
+  padding-left: 4.5rem;
 }
 .form__radio-button {
   width: 3rem;
   height: 3rem;
+  border: 5px solid #55c57a;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: -0.4rem;
 }
 .form__radio-button::after {
   content: "";
+  display: block;
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #55c57a;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+  opacity: 1;
+}
+.form__radio-input {
+  visibility: hidden;
 }
 
 .story {

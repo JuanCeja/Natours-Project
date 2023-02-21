@@ -55,14 +55,42 @@
     &__radio-label {
         font-size: $default-font-size;
         cursor: pointer;
+        position: relative;
+        padding-left: 4.5rem;
     }
 
     &__radio-button {
         width: 3rem;
         height: 3rem;
+        border: 5px solid $color-primary;
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: -.4rem;
 
         &::after {
             content: '';
+            display: block;
+            height: 1.3rem;
+            width: 1.3rem;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $color-primary;
+            opacity: 0;
+            transition: opacity .3s;
         }
     }
+
+    &__radio-input:checked ~ &__radio-label &__radio-button::after {
+        opacity: 1;
+    }
+
+    &__radio-input {
+        visibility: hidden;
+    }
+
 }
