@@ -447,6 +447,10 @@ body {
   visibility: hidden;
   transform: translateY(-4rem);
 }
+.form__radio-group {
+  width: 50%;
+  border: 1px solid red;
+}
 
 .story {
   width: 75%;
@@ -584,7 +588,6 @@ body {
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.35);
-  height: 50rem;
 }
 .book__form {
   width: 50%;
