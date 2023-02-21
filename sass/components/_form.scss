@@ -48,7 +48,21 @@
     }
 
     &__radio-group {
-        width: 50%;
-        border: 1px solid red;
+        width: 49%;
+        display: inline-block;
+    }
+
+    &__radio-label {
+        font-size: $default-font-size;
+        cursor: pointer;
+    }
+
+    &__radio-button {
+        width: 3rem;
+        height: 3rem;
+
+        &::after {
+            content: '';
+        }
     }
 }

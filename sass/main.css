@@ -448,8 +448,19 @@ body {
   transform: translateY(-4rem);
 }
 .form__radio-group {
-  width: 50%;
-  border: 1px solid red;
+  width: 49%;
+  display: inline-block;
+}
+.form__radio-label {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.form__radio-button {
+  width: 3rem;
+  height: 3rem;
+}
+.form__radio-button::after {
+  content: "";
 }
 
 .story {
