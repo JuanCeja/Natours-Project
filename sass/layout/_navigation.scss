@@ -5,11 +5,25 @@
     }
 
     &__button {
-
+        background-color: orange;
+        height: 7rem;
+        width: 7rem;
+        position: fixed;
+        top: 6rem;
+        right: 6rem;
+        border-radius: 50%;
+        z-index: 2500;
     }
 
     &__background {
-
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        position: fixed;
+        z-index: 2000;
+        top: 6.5rem;
+        right: 6.5rem;
+        background-image: radial-gradient($color-primary-light, $color-primary-dark);
     }
 
     &__nav {
@@ -25,6 +39,6 @@
     }
 
     &__link {
-        
+
     }
 }
