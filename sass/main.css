@@ -650,6 +650,7 @@ body {
   top: 6.5rem;
   right: 6.5rem;
   background-image: radial-gradient(#7ed56f, #28b485);
+  transition: all 0.8s;
 }
 .navigation__nav {
   height: 100vh;
@@ -658,6 +659,9 @@ body {
   top: 0;
   right: 0;
   z-index: 1500;
+  opacity: 0;
+  width: 0%;
+  transition: all 0.8s;
 }
 .navigation__list {
   position: absolute;
@@ -690,6 +694,13 @@ body {
   background-position: 100%;
   color: #55c57a;
   transform: translateX(1rem);
+}
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(95);
+}
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%;
 }
 
 .section-about {
