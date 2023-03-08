@@ -6,12 +6,14 @@
     left: 0;
     background-color: rgba($color-black, .8);
     z-index: 9999;
+    transition: all .3s;
 
     opacity: 0;
     visibility: hidden;
 
     &:target {
-        
+        opacity: 1;
+        visibility: visible;
     }
     
     &__content {
