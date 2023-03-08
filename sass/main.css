@@ -502,10 +502,6 @@ body {
   opacity: 0;
   visibility: hidden;
 }
-.popup:target {
-  opacity: 1;
-  visibility: visible;
-}
 .popup__content {
   position: absolute;
   top: 50%;
@@ -517,6 +513,9 @@ body {
   border-radius: 3px;
   display: table;
   overflow: hidden;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.25);
+  transition: all 0.5s 0.2s;
 }
 .popup__left {
   width: 33.3333333%;
@@ -543,6 +542,28 @@ body {
        column-rule: 1px solid #eee;
   -webkit-hyphens: auto;
           hyphens: auto;
+}
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+.popup:target .popup__content {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+.popup__close:link, .popup__close:visited {
+  color: #777;
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  font-size: 3rem;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
+  transition: all 0.2s;
+}
+.popup__close:hover {
+  color: #55c57a;
 }
 
 .story {
