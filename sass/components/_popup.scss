@@ -8,7 +8,11 @@
     z-index: 9999;
 
     opacity: 0;
-    display: none;
+    visibility: hidden;
+
+    &:target {
+        
+    }
     
     &__content {
         @include absCenter;
