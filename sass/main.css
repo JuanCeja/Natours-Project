@@ -508,7 +508,16 @@ body {
   background-color: #fff;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
   border-radius: 3px;
-  display: flex;
+  display: table;
+}
+.popup__left {
+  width: 33.3333333%;
+  display: table-cell;
+}
+.popup__right {
+  width: 67.6666667%;
+  display: table-cell;
+  vertical-align: middle;
 }
 .popup__img {
   display: block;

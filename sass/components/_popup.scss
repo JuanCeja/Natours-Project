@@ -14,15 +14,18 @@
         background-color: $color-white;
         box-shadow: 0 2rem 4rem rgba($color-black, .2);
         border-radius: 3px;
-        display: flex;
+        display: table;
     }
 
     &__left {
-        
+        width: 33.3333333%;
+        display: table-cell;
     }
     
     &__right {
-        
+        width: 67.6666667%;
+        display: table-cell;
+        vertical-align: middle;
     }
 
     &__img {
