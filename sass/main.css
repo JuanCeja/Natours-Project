@@ -509,6 +509,7 @@ body {
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   display: table;
+  overflow: hidden;
 }
 .popup__left {
   width: 33.3333333%;
@@ -518,11 +519,25 @@ body {
   width: 67.6666667%;
   display: table-cell;
   vertical-align: middle;
+  padding: 3rem 5rem;
 }
 .popup__img {
   display: block;
   width: 100%;
 }
+.popup__text {
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+  -moz-column-rule: 1px solid #eee;
+       column-rule: 1px solid #eee;
+  -webkit-hyphens: auto;
+          hyphens: auto;
+}
+
 .story {
   width: 75%;
   margin: 0 auto;
