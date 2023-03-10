@@ -9,6 +9,10 @@
 html {
     // this defines what we want 1 rem equal to
     font-size: 62.5%;
+
+    @include respond-phone {
+        font-size: 50%;
+    }
 }
 
 body {
