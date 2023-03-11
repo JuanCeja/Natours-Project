@@ -28,6 +28,6 @@ body {
     padding: 3rem;
     
     @include respond(tab-port) {
-        font-size: 50%;
+        padding: 0;
     }
 }
