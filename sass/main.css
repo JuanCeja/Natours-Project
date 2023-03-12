@@ -714,14 +714,19 @@ body {
   padding: 10rem;
   font-size: 1.4rem;
 }
-@media (max-width: 37.5em) {
-  .footer {
-    display: flex;
-  }
-}
 .footer__container {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 37.5em) {
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
 }
 .footer__logo-box {
   text-align: center;
@@ -736,10 +741,21 @@ body {
   border-top: 1px solid #777;
   padding-top: 2rem;
 }
+@media (max-width: 37.5em) {
+  .footer__navigation {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+}
 .footer__description {
   width: 45%;
   border-top: 1px solid #777;
   padding-top: 2rem;
+}
+@media (max-width: 37.5em) {
+  .footer__description {
+    width: 100%;
+  }
 }
 .footer__list {
   list-style: none;
