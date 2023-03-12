@@ -444,6 +444,12 @@ body {
   transition: transform 0.3s;
   width: 20%;
 }
+@media (max-width: 37.5em) {
+  .feature-box {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
 .feature-box__icon {
   font-size: 6rem;
   margin-bottom: 0.5rem;
@@ -677,6 +683,14 @@ body {
   display: flex;
   padding: 5rem;
 }
+@media (max-width: 37.5em) {
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5rem;
+    height: 40rem;
+  }
+}
 .about-section__reviews {
   flex: 1;
 }
@@ -742,6 +756,12 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
+}
+@media (max-width: 37.5em) {
+  .header {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
 }
 .header__logo-box {
   position: absolute;
@@ -891,12 +911,28 @@ body {
   margin-top: -15rem;
   height: 100rem;
 }
+@media (max-width: 37.5em) {
+  .section-features {
+    margin: 10rem 0 25rem;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
 .section-features__container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   transform: skewY(7deg);
   margin-top: 20rem;
+}
+@media (max-width: 37.5em) {
+  .section-features__container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 55rem;
+  }
 }
 
 .section-tours {

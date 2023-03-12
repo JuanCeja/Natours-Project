@@ -8,6 +8,11 @@
     transition: transform .3s;
     width: 20%;
 
+    @include respond(phone) {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
     &__icon {
         font-size: 6rem;
         margin-bottom: .5rem;

@@ -2,6 +2,13 @@
     display: flex;
     padding: 5rem;
 
+    @include respond(phone) {
+        display: flex;
+        flex-direction: column;
+        padding: 0 5rem;
+        height: 40rem;
+    }
+
     &__reviews {
         flex: 1;
     }
