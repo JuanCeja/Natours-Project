@@ -16,7 +16,7 @@
         text-align: center;
         cursor: pointer;
 
-        @include respond(phone) {
+        @include respond(tab-port) {
             
         }
     }
