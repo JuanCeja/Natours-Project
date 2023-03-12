@@ -287,6 +287,12 @@ body {
   height: 50rem;
   width: 25%;
 }
+@media (max-width: 37.5em) {
+  .card {
+    width: 100%;
+    margin-top: 15rem;
+  }
+}
 .card__side {
   height: 60rem;
   transition: all 0.8s ease;
@@ -945,6 +951,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+@media (max-width: 37.5em) {
+  .section-tours__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 
 .section-stories {

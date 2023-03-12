@@ -5,6 +5,11 @@
     height: 50rem;
     width: 25%;
 
+    @include respond(phone) {
+        width: 100%;
+        margin-top: 15rem;
+    }
+    
     &__side {
         height: 60rem;
         transition: all 0.8s ease;
