@@ -2,6 +2,11 @@
     background-color: $color-grey-light-1;
     padding: 25rem 0;
     margin-top: -20vh;
+
+    @include respond(tab-port) {
+        padding: 20rem 0;
+        height: 100rem;
+    }
 }
 
 .section-features {
@@ -14,8 +19,7 @@
     height: 100rem;
 
     @include respond(phone) {
-        margin: 10rem 0 25rem;
-        padding: 5rem 0;
+        padding: 15rem 0;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -41,6 +45,10 @@
     padding: 25rem 0 15rem 0;
     margin-top: -15rem;
 
+    @include respond(tab-port) {
+        padding: 20rem 0 10rem 0;
+    }
+
     &__container {
         margin-top: 8rem;
         display: flex;
@@ -51,18 +59,27 @@
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+            margin-top: -15rem;
         }
     }
 }
 
 .section-stories {
     position: relative;
-    padding: 7rem 0;
+    padding: 15rem 0;
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
 }
 
 .section-book {
     padding: 15rem 0;
     background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
 }
 
 .book {
