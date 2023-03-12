@@ -3,6 +3,10 @@
     padding: 10rem;
     font-size: 1.4rem;
 
+    @include respond(phone) {
+        display: flex;
+    }
+
     &__container {
         display: flex;
         justify-content: space-around;

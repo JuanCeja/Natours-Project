@@ -289,7 +289,7 @@ body {
 }
 @media (max-width: 37.5em) {
   .card {
-    width: 100%;
+    width: 60%;
     margin-top: 15rem;
   }
 }
@@ -452,7 +452,7 @@ body {
 }
 @media (max-width: 37.5em) {
   .feature-box {
-    width: 100%;
+    width: 60%;
     margin-bottom: 2rem;
   }
 }
@@ -646,6 +646,11 @@ body {
   transform: skewX(-12deg);
   margin-bottom: 7rem;
 }
+@media (max-width: 37.5em) {
+  .story {
+    width: 60%;
+  }
+}
 .story > * {
   transform: skewX(12deg);
 }
@@ -708,6 +713,11 @@ body {
   background-color: #333;
   padding: 10rem;
   font-size: 1.4rem;
+}
+@media (max-width: 37.5em) {
+  .footer {
+    display: flex;
+  }
 }
 .footer__container {
   display: flex;
@@ -975,6 +985,13 @@ body {
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.35);
+}
+@media (max-width: 37.5em) {
+  .book {
+    margin: 0 auto;
+    height: auto;
+    width: 60%;
+  }
 }
 .book__form {
   width: 50%;

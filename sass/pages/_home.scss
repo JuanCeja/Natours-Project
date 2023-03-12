@@ -63,6 +63,7 @@
 .section-book {
     padding: 15rem 0;
     background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
+    
 }
 
 .book {
@@ -70,6 +71,12 @@
     background-size: cover;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.35);
+
+    @include respond(phone) {
+        margin: 0 auto;
+        height: auto;
+        width: 60%;
+    }
 
     &__form {
         width: 50%;
