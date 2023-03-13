@@ -15,20 +15,23 @@
     background-size: cover;
     transform: skewY(-7deg);
     margin-top: -10rem;
-
-
-    @include respond(phone) {
+    
+    @include respond(tab-port) {
         padding: 15rem 0;
-        display: flex;
-        justify-content: center;
-
     }
-
+    
     &__container {
         display: flex;
         justify-content: space-around;
         align-items: center;
         transform: skewY(7deg);
+        border: 2px solid red;
+
+        @include respond(tab-land) {
+            display: flex;
+            justify-content: space-around;
+            gap: 2rem;
+        }
 
         @include respond(tab-port) {
             display: flex;
