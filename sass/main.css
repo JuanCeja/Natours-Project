@@ -297,7 +297,7 @@ body {
   height: 50rem;
   width: 25%;
 }
-@media (max-width: 37.5em) {
+@media (max-width: 56.25em) {
   .card {
     width: 60%;
     margin-top: 15rem;
@@ -1031,12 +1031,11 @@ body {
   align-items: center;
   transform: skewY(7deg);
 }
-@media (max-width: 37.5em) {
+@media (max-width: 56.25em) {
   .section-features__container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    height: 100%;
   }
 }
 
