@@ -1020,7 +1020,7 @@ body {
 }
 @media (max-width: 56.25em) {
   .section-features {
-    padding: 15rem 0;
+    padding: 10rem 0;
   }
 }
 .section-features__container {
@@ -1028,7 +1028,6 @@ body {
   justify-content: space-around;
   align-items: center;
   transform: skewY(7deg);
-  border: 2px solid red;
 }
 @media (max-width: 75em) {
   .section-features__container {
