@@ -1008,7 +1008,6 @@ body {
 @media (max-width: 56.25em) {
   .section-about {
     padding: 20rem 0;
-    height: 100rem;
   }
 }
 
@@ -1017,7 +1016,7 @@ body {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../../img/nat-4.jpg);
   background-size: cover;
   transform: skewY(-7deg);
-  margin-top: -15rem;
+  margin-top: -10rem;
 }
 @media (max-width: 37.5em) {
   .section-features {
@@ -1031,7 +1030,6 @@ body {
   justify-content: space-around;
   align-items: center;
   transform: skewY(7deg);
-  border: 1px solid orange;
 }
 @media (max-width: 37.5em) {
   .section-features__container {
@@ -1045,7 +1043,10 @@ body {
 .section-tours {
   background-color: #f7f7f7;
   padding: 25rem 0 15rem 0;
-  margin-top: -15rem;
+  margin-top: -10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 @media (max-width: 56.25em) {
   .section-tours {
@@ -1058,7 +1059,7 @@ body {
   align-items: center;
   justify-content: space-around;
 }
-@media (max-width: 37.5em) {
+@media (max-width: 56.25em) {
   .section-tours__container {
     display: flex;
     flex-direction: column;

@@ -5,7 +5,6 @@
 
     @include respond(tab-port) {
         padding: 20rem 0;
-        height: 100rem;
     }
 }
 
@@ -15,7 +14,7 @@
         url(../../img/nat-4.jpg);
     background-size: cover;
     transform: skewY(-7deg);
-    margin-top: -15rem;
+    margin-top: -10rem;
 
 
     @include respond(phone) {
@@ -30,7 +29,6 @@
         justify-content: space-around;
         align-items: center;
         transform: skewY(7deg);
-        border: 1px solid orange;
 
         @include respond(phone) {
             display: flex;
@@ -44,7 +42,10 @@
 .section-tours {
     background-color: $color-grey-light-1;
     padding: 25rem 0 15rem 0;
-    margin-top: -15rem;
+    margin-top: -10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
     @include respond(tab-port) {
         padding: 20rem 0 10rem 0;
@@ -56,7 +57,7 @@
         align-items: center;
         justify-content: space-around;
 
-        @include respond(phone) {
+        @include respond(tab-port) {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
