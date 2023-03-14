@@ -491,6 +491,7 @@ body {
 @media (max-width: 56.25em) {
   .feature-box {
     padding: 2rem;
+    width: 60%;
   }
 }
 .feature-box__icon {
