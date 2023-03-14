@@ -15,11 +15,11 @@
     background-size: cover;
     transform: skewY(-7deg);
     margin-top: -10rem;
-    
+
     @include respond(tab-port) {
         padding: 10rem 0;
     }
-    
+
     &__container {
         display: flex;
         justify-content: space-around;
@@ -90,15 +90,18 @@
     background-size: cover;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.35);
-
-    @include respond(phone) {
-        margin: 0 auto;
-        height: auto;
-        width: 80%;
+    
+    @include respond(tab-land) {
+        background-image: linear-gradient(105deg, rgba($color-white, 0.9) 65%, transparent 65%), url(../../img/nat-10.jpg);
+        background-size: cover;
     }
 
     &__form {
         width: 50%;
         padding: 6rem;
+
+        @include respond(tab-land) {
+            width: 65%;
+        }
     }
 }
