@@ -164,56 +164,20 @@
     }
 
     @include respond(tab-port) {
-        //FUNCTIONALITY
-        perspective: 125rem;
-        position: relative;
-        height: 50rem;
-        width: 25%;
-
-        @include respond(tab-port) {
-            width: 60%;
-            margin-top: 15rem;
-        }
+        height: auto;
 
         &__side {
-            height: 60rem;
-            transition: all 0.8s ease;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            backface-visibility: hidden;
+            height: auto;
+            position: relative;
             border-radius: 3px;
-            box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
-            overflow: hidden;
-
-            &--front {
-                background-color: $color-white;
-            }
 
             &--back {
-                transform: rotateY(180deg);
-
-                &-1 {
-                    background-image: linear-gradient(to bottom right, $color-secondary-light, $color-secondary-dark);
-                }
-
-                &-2 {
-                    background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
-                }
-
-                &-3 {
-                    background-image: linear-gradient(to bottom right, $color-tertiary-light, $color-tertiary-dark);
-                }
+                transform: rotateY(0);
             }
         }
 
         &:hover &__side--front {
-            transform: rotateY(-180deg);
-        }
-
-        &:hover &__side--back {
-            transform: rotateY(0deg);
+            transform: rotateY(0);
         }
 
         //FRONT SIDE STYLING

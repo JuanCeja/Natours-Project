@@ -419,59 +419,19 @@ body {
 }
 @media (max-width: 56.25em) {
   .card {
-    perspective: 125rem;
-    position: relative;
-    height: 50rem;
-    width: 25%;
+    height: auto;
   }
-}
-@media (max-width: 56.25em) and (max-width: 56.25em) {
-  .card {
-    width: 60%;
-    margin-top: 15rem;
-  }
-}
-@media (max-width: 56.25em) {
   .card__side {
-    height: 60rem;
-    transition: all 0.8s ease;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+    height: auto;
+    position: relative;
     border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-    overflow: hidden;
-  }
-  .card__side--front {
-    background-color: #fff;
   }
   .card__side--back {
-    transform: rotateY(180deg);
+    transform: rotateY(0);
   }
-  .card__side--back-1 {
-    background-image: linear-gradient(to bottom right, #ffb900, #ff7730);
-  }
-  .card__side--back-2 {
-    background-image: linear-gradient(to bottom right, #7ed56f, #28b485);
-  }
-  .card__side--back-3 {
-    background-image: linear-gradient(to bottom right, #2998ff, #5643fa);
-  }
-}
-@media (max-width: 56.25em) {
   .card:hover .card__side--front {
-    transform: rotateY(-180deg);
+    transform: rotateY(0);
   }
-}
-@media (max-width: 56.25em) {
-  .card:hover .card__side--back {
-    transform: rotateY(0deg);
-  }
-}
-@media (max-width: 56.25em) {
   .card__picture {
     background-size: cover;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -490,8 +450,6 @@ body {
   .card__picture--3 {
     background-image: linear-gradient(to bottom right, #2998ff, #5643fa), url(../img/nat-7.jpg);
   }
-}
-@media (max-width: 56.25em) {
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -503,8 +461,6 @@ body {
     right: 2rem;
     width: 75%;
   }
-}
-@media (max-width: 56.25em) {
   .card__heading-span {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
@@ -519,8 +475,6 @@ body {
   .card__heading-span--3 {
     background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85));
   }
-}
-@media (max-width: 56.25em) {
   .card__details {
     padding: 3rem;
   }
@@ -537,8 +491,6 @@ body {
   .card__details ul li:not(:last-child) {
     border-bottom: 1px solid #eee;
   }
-}
-@media (max-width: 56.25em) {
   .card__cta {
     position: absolute;
     top: 50%;
@@ -547,21 +499,15 @@ body {
     width: 90%;
     text-align: center;
   }
-}
-@media (max-width: 56.25em) {
   .card__price-box {
     text-align: center;
     color: #fff;
     margin-bottom: 8rem;
   }
-}
-@media (max-width: 56.25em) {
   .card__price-only {
     font-size: 1.4rem;
     text-transform: uppercase;
   }
-}
-@media (max-width: 56.25em) {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100;
