@@ -327,8 +327,14 @@
 
     <footer class="footer">
         <div class="footer__logo-box">
-            <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" class="footer__logo">
+
+            <picture class="footer__logo">
+                <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
+                <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo">
+            </picture>
+
         </div>
+
         <div class="footer__container">
             <div class="footer__navigation">
                 <ul class="footer__list">
@@ -341,7 +347,8 @@
             </div>
             <div class="footer__description">
                 <p class="footer__copyright">
-                    Built by <a href="https://www.linkedin.com/in/juan-ceja/" class="footer__link">Juan Ceja</a>. I'm excited to share with you my latest
+                    Built by <a href="https://www.linkedin.com/in/juan-ceja/" class="footer__link">Juan Ceja</a>. I'm
+                    excited to share with you my latest
                     project - a landing page that demonstrates my abilities in using Sass, media queries, flexbox, and
                     animations. These are essential tools that I use to create beautiful, responsive, and engaging
                     designs. With Sass, I can write more efficient and maintainable CSS, while media queries allow me to
@@ -363,13 +370,20 @@
             <div class="popup__left">
                 <img src="img/nat-8.jpg" alt="Tour Photo" class="popup__img">
                 <img src="img/nat-9.jpg" alt="Tour Photo" class="popup__img">
-            </div>  
+            </div>
             <div class="popup__right">
                 <a href="#section-tours" class="popup__close">&times;</a>
                 <h2 class="heading-secondary u-margin-bottom-small">Start Booking Now</h2>
-                <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+                <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before
+                    booking</h3>
                 <p class="popup__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl suscipit adipiscing bibendum est ultricies integer. Accumsan in nisl nisi scelerisque eu ultrices. Velit scelerisque in dictum non consectetur a erat. Ultrices sagittis orci a scelerisque purus. Eget nulla facilisi etiam dignissim. Morbi tristique senectus et netus et malesuada. Urna molestie at elementum eu facilisis sed odio. Lacus laoreet non curabitur gravida arcu ac tortor dignissim convallis. Ipsum nunc aliquet bibendum enim facilisis gravida. Vulputate eu scelerisque felis imperdiet proin fermentum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Nisl suscipit adipiscing bibendum est ultricies integer. Accumsan in nisl
+                    nisi scelerisque eu ultrices. Velit scelerisque in dictum non consectetur a erat. Ultrices sagittis
+                    orci a scelerisque purus. Eget nulla facilisi etiam dignissim. Morbi tristique senectus et netus et
+                    malesuada. Urna molestie at elementum eu facilisis sed odio. Lacus laoreet non curabitur gravida
+                    arcu ac tortor dignissim convallis. Ipsum nunc aliquet bibendum enim facilisis gravida. Vulputate eu
+                    scelerisque felis imperdiet proin fermentum.
                 </p>
                 <a href="#" class="btn btn--green">Book Now</a>
             </div>
