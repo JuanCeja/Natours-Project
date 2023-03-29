@@ -4,32 +4,36 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba($color-black, .8);
-    z-index: 9999;
-    transition: all .3s;
-
+    background-color: rgba($color-black, 0.8);
     opacity: 0;
     visibility: hidden;
-    
+    z-index: 9999;
+    transition: all 0.3s;
+
+    @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+
     &__content {
         @include absCenter;
-        
+
         width: 75%;
         background-color: $color-white;
-        box-shadow: 0 2rem 4rem rgba($color-black, .2);
+        box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
         border-radius: 3px;
         display: table;
         overflow: hidden;
         opacity: 0;
-        transform: translate(-50%, -50%) scale(.25);
-        transition: all .5s .2s;
+        transform: translate(-50%, -50%) scale(0.25);
+        transition: all 0.5s 0.2s;
     }
 
     &__left {
         width: 33.3333333%;
         display: table-cell;
     }
-    
+
     &__right {
         width: 67.6666667%;
         display: table-cell;
@@ -62,10 +66,8 @@
         opacity: 1;
         transform: translate(-50%, -50%) scale(1);
     }
-    
+
     &__close {
-        
-        
         &:link,
         &:visited {
             color: $color-grey-dark;
@@ -76,10 +78,10 @@
             text-decoration: none;
             display: inline-block;
             line-height: 1;
-            
-            transition: all .2s;
+
+            transition: all 0.2s;
         }
-        
+
         &:hover {
             color: $color-primary;
         }
