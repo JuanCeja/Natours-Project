@@ -163,18 +163,16 @@
         font-weight: 100;
     }
 
-    @include respond(tab-port) {
+    @media only screen and (max-width: 56.25em), only screen and (hover: none) {
         height: auto;
         border-radius: 3px;
         background-color: $color-white;
         box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
-
         &__side {
             height: auto;
             position: relative;
             box-shadow: none;
-
 
             &--back {
                 transform: rotateY(0);
